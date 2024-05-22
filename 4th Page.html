@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project</title>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+	<style type="text/css">
+
+		p{
+  			font-family: "Quicksand", sans-serif;
+  			font-optical-sizing: auto;
+  			font-weight: <300>;
+  			font-style: normal;
+		}
+
+		#logo{
+			margin: 20px;
+			width: 70px;
+		}
+		.vanity_Fair_logo{
+			width: 150px;
+			margin: 20px;
+		}
+		.one{
+			background-color: #F8A245;
+			padding: 100px;
+		}
+
+
+		.stats{
+			background-color: #151515;
+			padding: 100px;
+		}
+
+		.square1:hover{
+			background-color: white;
+			font-size: 0;
+			transition: background-color .25s ease-out 100ms;
+		}
+
+		.square1:hover:after{
+			content: attr(data-hover1);
+			font-size: 50px;
+		}
+
+		.square1{
+			height: 500px;
+			width: 250;
+			background-color: #F8A245;
+			font-size: 50px;
+		}
+
+		.square2:hover{
+			background-color: white;
+			font-size: 0;
+			transition: background-color .25s ease-out 100ms;
+		}
+
+		.square2:hover:after{
+			content: attr(data-hover2);
+			font-size: 50px;
+		}
+
+		.square2{
+			height: 500px;
+			width: 250;
+			background-color: #F07A00;
+			font-size: 50px;
+		}
+
+		.square3:hover{
+			background-color: white;
+			font-size: 0;
+			transition: background-color .25s ease-out 100ms;
+		}
+
+		.square3:hover:after{
+			content: attr(data-hover3);
+			font-size: 50px;
+		}
+
+		.square3{
+			height: 500px;
+			width: 250;
+			background-color: #D45101;
+			font-size: 50px;
+		}
+
+		.bio{
+			font-size: 25px;
+		}
+
+		.portrait{
+			height: 500px;
+			width: #F2F4FC;
+			border: double;
+			border-width: 10px;
+			border-color: #074949;
+		}
+
+
+		.gallery{
+ 			background-color: #F07A00;
+ 			justify-content: center;
+			display:flex;
+			flex-wrap: wrap;
+			padding:100px;
+		}
+
+		.pic{
+			height: 500px;
+			width: 250px;
+			padding:20px;
+			margin: 10px;
+		}
+
+		.img-thumbnail{
+			width: 300px;
+		}
+
+
+		h1{
+			font-size: 60px;
+			font-family: "Quicksand", sans-serif;
+  			font-optical-sizing: auto;
+  			font-weight: <700>;
+  			font-style: bold;
+		}
+
+		h2{
+  			font-size: 60px;
+  			color: white;
+  			font-family: "Quicksand", sans-serif;
+  			font-optical-sizing: auto;
+  			font-weight: <700>;
+  			font-style: bold;
+		}
+
+		h3{
+			font-size: 60px;
+  			font-family: "Quicksand", sans-serif;
+  			font-optical-sizing: auto;
+  			font-weight: <700>;
+  			font-style: bold;
+		}
+
+		h6{
+			color: white;
+			font-family: "Quicksand", sans-serif;
+  			font-optical-sizing: auto;
+  			font-weight: <700>;
+  			font-style: bold;
+		}
+
+		body{
+				background-color:#D45101;
+			}
+
+		footer{
+		background-color: white;
+		padding: 10px;
+		}
+
+	</style>
+</head>
+<nav class="navbar navbar-expand-xl bg-light">
+	<a class="navbar-brand">
+		<img src="logo.png" id="logo">
+	</a>
+
+ <div class="container-fluid">
+	<ul class="navbar-nav">
+		<li class="nav-item">
+	    	<a class="nav-link" id="sign-in">Log Out</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" id="2nd-page">First Quarter</a>
+	    </li>
+
+	    <li class="nav-item">
+	    	<a class="nav-link" id="3rd-page">Second Quarter</a>
+	    </li>
+
+	    <li class="nav-item">
+	    	<a class="nav-link" id="4th-page">Third Quarter</a>
+	    </li>
+
+	    <li class="nav-item">
+	    	<a class="nav-link" id="comment-section">Comment Section</a>
+	    </li>
+	</ul>
+
+	<div class="search-container">
+		<input class="me-2" type="text" placeholder="Search"><button type="button" class="button">Search</button>
+	</div>
+</div>
+</nav>
+
+<div class="heading mt-2 mb-2">
+<center><h1>3rd Quarter Project</h1></center>
+</div>
+
+<body>
+<div class="container">
+	<nav class="navbar navbar-expand-xl bg-light col-xl-12">
+		<a class="navbar-brand"> 
+			<img src="https://logo-logos.com/2016/10/Vanity_Fair_logo.png" class="vanity_Fair_logo" id="brand">
+		</a>
+	  
+	 <div class="container-fluid">
+		<ul class="navbar-nav col-xl-12">
+		    <li class="nav-item">
+		      <a class="nav-link" href="4th Page.html">Home</a>
+		    </li>
+		    	<a class="nav-link" href="https://www.lpga.com/players/muni-he/98620/stats">LPGA Page</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="signup.html">Fan Club Registration</a>
+		    </li>
+		    <li class="nav-item dropdown">
+		    	<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Social Media</a>
+	  			<ul class="dropdown-menu">
+	    			<li><a class="dropdown-item" href="https://www.instagram.com/lilymhe/?hl=en">Instagram</a></li>
+	    			<li><a class="dropdown-item" href="https://www.tiktok.com/@lilymhe?lang=en">TikTok</a></li>
+	    			<li><a class="dropdown-item" href="https://twitter.com/iiiymunihe?lang=en">Twitter</a></li>
+	    			<li><a class="dropdown-item" href="https://www.facebook.com/lily.he.7/">Facebook</a></li>
+	  			</ul>
+		   <li>  
+		    <li class="nav-item dropdown">
+		    	<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">References</a>
+	  			<ul class="dropdown-menu">
+	    			<li><a class="dropdown-item" href="https://www.instagram.com/lilymhe/p/CoaNKWGPqhK/?img_index=1">Image 1</a></li>
+	    			<li><a class="dropdown-item" href="https://www.instagram.com/lilymhe/p/C3DqanhP8vO/?img_index=8">Image 2</a></li>
+	    			<li><a class="dropdown-item" href="https://gall.dcinside.com/mgallery/board/view/?id=formula1&no=567834">Image 3</a></li>
+	    			<li><a class="dropdown-item" href="https://www.instagram.com/lilymhe/p/Cvu49z7InAL/?img_index=3">Image 4</a></li>
+	  			</ul>
+		   <li>  
+		</ul>
+	</div>
+	</nav>
+
+			<div class="container">
+			<div class="one">
+				<div class="header">
+						<div class="col-xl-12" >
+							<p><strong>Featured Person</strong></p>
+						</div>
+
+						<div class="col-xl-12 bg-dark" >
+							<h6>Listing    Advanced Search</h6>
+						</div>
+
+						<div class="col-xl-12" >
+							<h1>Muni "Lily" He</h1>
+						</div>
+				</div>
+
+				<div class="row">
+						<div class="col-xl-7">
+							<div class="bio">
+								<p>		Lily Muni He was born in Chengdu, Sichuan, China. Her fatherwas a hotelier and restaurateur who introduced her to golf at a young age and by age 5, she was already playing competitively. Her family moved to Vancouver and later, San Diego. 
+									<br><br>
+								She studied at Torrey Pines High School in San Diego. In the United States, she was able to play golf more regularly and she joined San Diego and Southern California junior golf tournaments, alongside U.S. Kids' Golf and American Junior Golf Association events.Before turning pro, she spent one year at the University of Southern California, majoring in communications.</p>
+							</div>
+						</div>
+
+						<div class="col-xl-5">
+							<img class="portrait" src="https://i.pinimg.com/564x/9b/a6/fb/9ba6fbb9a4b29da24cc85f0441f9e159.jpg" alt="Artist's Face">
+
+						</div>
+				</div>
+			</div>
+
+			<div class="stats">
+				<center>
+				<div class="col-xl-12">
+					<h2>Fun Facts</h2>
+				</div>
+				<div class="row">
+					<div class="col-xl-4">
+						<div class="square1" data-hover1="She has more then 700,000 followers on Instagram.">
+							<br><br>
+							<p>Fact<br>#1</p>
+						</div>
+					</div>
+
+					<div class="col-xl-4">
+						<div class="square2" data-hover2="She is also an ambassador for Nike and WeChat.">
+							<br><br>
+							<p>Fact<br>#2</p>
+						</div>
+					</div>
+
+					<div class="col-xl-4">
+						<div class="square3" data-hover3="She has 2 rabbits named Turbo and Birdie.">
+							<br><br>
+							<p>Fact<br>#3</p>
+						</div>
+					</div>
+				</div>
+				</center>
+			</div>
+
+			<div class="gallery">
+				<div class="row">
+				<br>
+				<div>
+					<h3><center>Gallery</center></h3>
+				</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-4">
+						<img src="https://i.pinimg.com/736x/ee/3f/6f/ee3f6f7d340b3e7ccaea294937355f50.jpg" class="img-thumbnail">
+					</div>
+
+					<div class="col-xl-4">
+						<img src="https://i.pinimg.com/736x/ba/89/9b/ba899b5d1f6d6f5aa9783750e2aed417.jpg" class="img-thumbnail">
+					</div>
+
+					<div class="col-xl-4">
+						<img src="https://i.pinimg.com/564x/6f/c0/2e/6fc02e2757d9c08c88b2c5d916d79d26.jpg" class="img-thumbnail">
+					</div>
+				</div>
+			</div>
+						<hr>
+
+		<form class="d-flex">
+	        <input class="form-control me-2" type="text" placeholder="Search">
+	        <button class="btn btn-dark" type="button">Search</button>
+	      </form>
+			</div>
+				<br/>
+</div>
+
+<div class="button mb-5 mt-5">
+		<center>	
+		<a href="mainpage.html" class="btn btn-dark" id="back">Back to Mainpage</a>
+		<center>
+</div>
+
+<footer>
+	<center>
+		<p>
+			Grade 9 
+			<br>
+			Online Portfolio
+		</p>
+	</center>
+</footer>
+
+<script type="text/javascript">
+	let home="mainpage.html";//to replace the href of bootstrap code
+	document.getElementById("logo").onclick=function(){ 
+	//to get the element with id
+		window.location.replace(home);//this function allows the variable to be replaced with the new page
+	};
+
+	let index="index.html";//to replace the href of bootstrap code
+	document.getElementById("sign-in").onclick=function(){
+	//to get the element with id
+		window.location.replace(index);//this function allows the variable to be replaced with the new page
+	};
+
+	let qtr1="2nd Page.html";//to replace the href of bootstrap code
+	document.getElementById("2nd-page").onclick=function(){
+	//to get the element with id
+		window.location.replace(qtr1);//this function allows the variable to be replaced with the new page
+	};
+
+	let qtr2="3rd Page.html"; //to replace the href of bootstrap code
+	document.getElementById("3rd-page").onclick=function(){
+	//to get the element with id
+		window.location.replace(qtr2);//this function allows the variable to be replaced with the new page
+	};
+
+	let qtr3="4th Page.html"; //to replace the href of bootstrap code
+	document.getElementById("4th-page").onclick=function(){
+	//to get the element with id
+		window.location.replace(qtr3);//this function allows the variable to be replaced with the new page
+	};
+
+	let comment="comment_section.html"; //to replace the href of bootstrap code
+	document.getElementById("comment-section").onclick=function(){
+	//to get the element with id
+		window.location.replace(comment);//this function allows the variable to be replaced with the new page
+	};
+</script>
+</body>
+</html>
